@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js</title></head>
+<body>
+    <script type ="text/javascript">
+
+function sayHello() {
+let you = prompt("What's your name? ");
+console.log("Hello", you + "!");
+}
+sayHello();
+<!-- variables in function and functions in variablest -->
+let varContainingFunction = function() {
+let varInFunction = "I'm in a function.";
+console.log("hi there!", varInFunction);
+};
+varContainingFunction();
+
+function tester(para1, para2){
+return para1 + " " + para2;
+
+}
+const arg1 = "argument 1";
+const arg2 = "argument 2";
+console.log(tester(arg1, arg2));
+
+function addTwoNumbers(x, y) {
+    let z= x + y;
+console.log(z);
+  
+console.log(x + y);
+}
+addTwoNumbers(5,4);
+<!-- fucntion value assignment -->
+function addTwoNumbers(x = 2, y = 3) {
+console.log(x + y);
+}
+addTwoNumbers();
+addTwoNumbers(6, 6);
+addTwoNumbers(10);
+<!-- Recursive function -->
+function logRecursive(nr) {
+console.log("Started function:", nr);
+if (nr > 0) {
+logRecursive(nr - 1);
+} else {
+console.log("done with recursion");
+}
+console.log("Ended function:", nr);
+}
+logRecursive(3);
+
+// factorial
+       
+             let fact = 1, num = 5; //initializing variables
+      function calculateFactorial(number){ //function definition
+        if(number == 0)
+          return 1; // 0! = 1
+        else
+          return number * calculateFactorial(number - 1); //recursion: calling itself
+      }
+      document.write("The factorial of " + num + " is " + calculateFactorial(num));
+//Arrow functions
+
+//useful whenever you want to write an implementation on the spot, such as inside another function as an argument. This is because they are a shorthand notation for writing functions.
+ function doingStuff(x) {
+console.log(x);
+}
+let doingArrowStuff = x => console.log(x);
+doingArrowStuff("Great!");//invoking
+//spread operator
+//consists of three dots used before  referenced expression or string
+
+let spread = ["so", "much", "fun"];
+let message = ["JavaScript", "is", ...spread, "and", "very","powerful"];
+alert(message);
+
+
+//anomymous function
+
+let functionVariable = function () {  //create a function and assign to a variable to create anonymous
+console.log("Not so secret though.");
+};
+functionVariable();
+
+
+    </script>
+    
+</body>
+</html>

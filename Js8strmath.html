@@ -1,0 +1,115 @@
+<html lang="en">
+    <head>
+       <title>first script</title>
+    </head>
+    <body>
+    <script = "text/javascript">
+    //concat
+    let s1 = "Hello ";
+    let s2 = "JavaScript";
+    let result = s1.concat(s2);
+    console.log(result);
+
+    //split
+    let result1 = "Hello JavaScript";
+    let arr_result = result1.split(" ");
+    console.log(arr_result);
+
+    //join
+    let letters = ["a", "b", "c"];
+    let x = letters.join();
+    console.log(x);
+    //indexof
+
+    let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
+    let index_re = poem.indexOf("re");
+    console.log(index_re);
+
+    let searchStr = "When I see my fellow, I say hello";
+    let pos = searchStr.search("lo");
+    console.log(pos);
+
+    let lastIndex_re = poem.lastIndexOf("re");
+    console.log(lastIndex_re);
+
+    let pos1 = poem.charAt(10);
+    console.log(pos1);
+
+    let str = "Create a substring";
+    let substr1 = str.slice(5);
+    let substr2 = str.slice(0,3);
+    console.log("1:", substr1);
+    console.log("2:", substr2);
+
+    let hi = "Hi buddy";
+    let new_hi = hi.replace("buddy", "Pascal");
+    console.log(new_hi);
+    let up=hi.toUpperCase();
+    console.log(up);
+    // math
+    let highest = Math.max(2, 56, 12, 1, 233, 4);
+    let lowest = Math.min(2, 56, 12, 1, 233, 4)
+    console.log(highest);
+    console.log(lowest);
+
+    let result3 = Math.sqrt(64);
+    console.log(result3);
+    let result2 = Math.pow(5, 3);
+    console.log(result2);
+
+
+    let g = 2;
+    let exp = Math.exp(g);
+    console.log("Exp:", exp);
+    let log = Math.log(exp);
+    console.log("Log:", log);
+
+
+    //date
+
+    let currentDateTime = new Date();
+    console.log(currentDateTime);
+
+    let now2 = Date.now();//builtin
+    console.log(now2);
+
+
+    let d = new Date();
+    console.log("Day of week:", d.getDay());
+    console.log("Day of month:", d.getDate());
+    console.log("Month:", d.getMonth());
+    console.log("Year:", d.getFullYear());
+    console.log("Seconds:", d.getSeconds());
+    console.log("Milliseconds:", d.getMilliseconds());
+    console.log("Time:", d.getTime());
+    //builtin parse
+    let d1 = Date.parse("June 5, 2021");// convert string to date in ISO format
+    console.log(d1);
+    console.log(d.toDateString());
+
+    //Making integers with parseInt()
+    let str_int = "6";
+    let int_int = parseInt(str_int);
+    console.log("Type of ", int_int, "is", typeof int_int);//a string will be changed to an integer
+    
+    let str_float = "7.6";
+    let float_float = parseFloat(str_float);
+    console.log("Type of", float_float, "is", typeof float_float);
+
+    let age = parseInt(prompt("How old are you?"));
+
+    let message;
+    if(age >= 21){
+    message = "You can contest in elections.";
+    }else if(age >= 18){
+    message = "You can own a driving license.";
+    }else{
+    message = "You are not allowed in!";
+    }
+    console.log(message);
+ 
+    </script>
+     
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+       <title>first script</title>
+    </head>
+    <body>
+    <script = "text/javascript">
+let arr = [0, 1, 2];
+console.log(typeof arr);
+let dog = { dogName: "JavaScript",
+            weight: 2.4,
+            color: "brown",
+            breed: "chihuahua",
+            age: 3,
+            burglarBiter: true
+            };
+dog["color"] = "blue";
+dog.weight = 2.3;
+console.log(dog);
+let variable = "age";
+console.log(dog[variable]);
+variable = "breed";
+console.log(dog[variable]);
+
+let company = { companyName: "Healthy Candy",
+activity: "food manufacturing",
+address: {
+street: "2nd street",
+number: "123",
+zipcode: "33116",
+city: "Miami",
+state: "Florida"
+},
+yearOfEstablishment: 2021
+};
+console.log(company);
+company.address.zipcode = "33117";
+console.log(company);
+company["address"]["number"] = "100";
+
+   </script>
+     
+    </body>
+
+</html>
